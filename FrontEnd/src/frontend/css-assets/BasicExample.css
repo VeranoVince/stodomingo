@@ -1,0 +1,87 @@
+/*.card {
+  padding: clamp(16px, 5vw, 32px);
+  margin-bottom: clamp(16px, 5vw, 32px);
+  background-color: #fff;
+}
+
+.card-actions {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.card-btn-float {
+  position: absolute;
+  z-index: 10;
+  bottom: 16px;
+  left: 16px;
+}
+
+.card-btn-float + .card-btn-float {
+  left: 64px;
+}
+
+.card-image {
+  display: block;
+  overflow: hidden;
+  position: relative; // Added position relative
+}
+
+.card-image img {
+  transform: scale3d(1, 1, 1);
+  transition: transform 1s ease-in-out;
+  position: absolute; // Added position absolute
+  top: 0; // Added top 0
+  left: 0; // Added left 0
+}
+
+.card-image:hover img,
+.card-image:focus img,
+.card-btn-float:focus ~ .card-image img,
+.card-btn-float:hover ~ .card-image img {
+  transform: scale3d(1.5, 1.5, 1);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #1c7adc;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #4aa0ff;
+}
+
+.btn:focus {
+  outline: 4px solid rgba(0, 0, 0, 0.3);
+  outline-offset: -4px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+a {
+  color: #1c7adc;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+}*/

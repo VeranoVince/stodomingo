@@ -1,0 +1,281 @@
+.bars-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  transform: skewY(-2deg); /* Counteract the skew for text */
+}
+
+.vsecondary-bar {
+  position: absolute;
+  top: 0;
+  height: 95px;
+  z-index: -1;
+  width: 101.5%;
+  background-color: #ee6b69;
+  margin-right: 50%;
+  margin-top: 20px;
+}
+
+.vthird-bar {
+  position: absolute;
+  top: 0;
+  height: 95px;
+  z-index: -1;
+  width: 102%;
+  background-color: #ee6b69;
+  margin-top: 12px;
+}
+
+.vfourth-bar,
+.vfifth-bar {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 88%;
+  height: 100px;
+}
+
+.vfourth-bar {
+  background-color: #af2624;
+}
+
+.vfifth-bar {
+  background-color: #af2624;
+}
+
+.bar {
+  position: relative;
+  height: 30px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-bar,
+.right-bar {
+  color: white;
+  justify-content: center;
+  width: 80%;
+  border-radius: 5px;
+  height: auto;
+  transition: background-color 0.3s ease;
+}
+
+.left-bar {
+  background-color: #249ffd;
+  margin-right: 30%;
+}
+
+.right-bar {
+  background-color: #2273b2;
+  margin-left: 30%;
+}
+
+.text {
+  margin: 0 10px;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.bar:hover {
+  background-color: #3a83cc;
+  cursor: pointer;
+}
+@media (max-width: 1300px) {
+  .text {
+    font-size: 25px;
+  }
+  .vsecondary-bar {
+    height: 80px;
+  }
+  .vfourth-bar {
+    height: 90px;
+    width: 97%;
+  }
+  .vthird-bar {
+    height: 80px;
+  }
+  .vfifth-bar {
+    height: 85px;
+    width: 97%;
+  }
+}
+@media (max-width: 1200px) {
+  .text {
+    font-size: 25px;
+  }
+  .vsecondary-bar {
+    height: 80px;
+  }
+  .vfourth-bar {
+    height: 90px;
+  }
+  .vthird-bar {
+    height: 80px;
+  }
+  .vfifth-bar {
+    height: 85px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 25px;
+  }
+  .vsecondary-bar {
+    height: 80px;
+  }
+  .vfourth-bar {
+    height: 90px;
+  }
+  .vthird-bar {
+    height: 80px;
+  }
+  .vfifth-bar {
+    height: 85px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text {
+    font-size: 20px;
+  }
+  .vsecondary-bar {
+    height: 60px;
+  }
+  .vfourth-bar {
+    height: 70px;
+    width: 93%;
+  }
+  .vthird-bar {
+    height: 60px;
+  }
+  .vfifth-bar {
+    height: 70px;
+    width: 93%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 19px;
+  }
+  .vsecondary-bar {
+    height: 55px;
+  }
+  .vfourth-bar {
+    height: 70px;
+    width: 93%;
+  }
+  .vthird-bar {
+    height: 55px;
+  }
+  .vfifth-bar {
+    height: 70px;
+    width: 93%;
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    font-size: 14px;
+  }
+  .vsecondary-bar {
+    height: 45px;
+    width: 103%;
+  }
+  .vfourth-bar {
+    height: 50px;
+    width: 95%;
+  }
+  .vthird-bar {
+    height: 60px;
+    width: 104%;
+  }
+  .vfifth-bar {
+    height: 50px;
+  }
+}
+@media (max-width: 540px) and (max-height: 720px) {
+  .text {
+    font-size: 13.5px;
+  }
+  .vsecondary-bar {
+    height: 43px;
+    width: 98%;
+  }
+  .vfourth-bar {
+    height: 50px;
+    width: 95%;
+  }
+  .vthird-bar {
+    height: 43px;
+    width: 105%;
+  }
+  .vfifth-bar {
+    height: 50px;
+    width: 95%;
+  }
+  .left-bar,
+  .right-bar {
+    color: white;
+    width: 75%;
+  }
+}
+@media (max-width: 375px) {
+  .text {
+    font-size: 11px;
+  }
+  .vsecondary-bar {
+    height: 30px;
+    width: 98%;
+  }
+  .vfourth-bar {
+    height: 40px;
+    width: 95%;
+  }
+  .vthird-bar {
+    height: 45px;
+    width: 105%;
+  }
+  .vfifth-bar {
+    height: 40px;
+    width: 95%;
+  }
+  .left-bar,
+  .right-bar {
+    color: white;
+    width: 75%;
+  }
+}
+@media (max-width: 280px) {
+  .text {
+    font-size: 10px;
+  }
+  .vsecondary-bar {
+    height: 30px;
+    width: 98%;
+  }
+  .vfourth-bar {
+    height: 40px;
+    width: 95%;
+  }
+  .vthird-bar {
+    height: 45px;
+    width: 105%;
+  }
+  .vfifth-bar {
+    height: 40px;
+    width: 95%;
+  }
+  .left-bar,
+  .right-bar {
+    color: white;
+    width: 75%;
+  }
+}

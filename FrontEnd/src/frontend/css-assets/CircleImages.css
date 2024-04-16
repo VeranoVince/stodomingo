@@ -1,0 +1,95 @@
+/* Circles.css */
+
+.main-title {
+  text-align: center;
+  font-size: 55px;
+  color: #6699cc;
+  margin-bottom: 0; /* Adjusted margin-bottom to remove the gap */
+  position: relative;
+}
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #85aacf;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.circles-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.circle {
+  position: relative;
+  display: flex;
+}
+
+/* Selector for the hover effect on the image and text */
+.circle:hover {
+  background-color: #6699cc; /* Change background color to violet on hover */
+}
+
+.circle img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+  box-sizing: border-box; /* Add box-sizing property to include the border in total width and height */
+}
+
+/* Selector for the hover effect on the image only */
+.circle:hover img {
+  transform: translateX(10px);
+  border-radius: 0;
+}
+
+.circle p {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 35px; /* Adjust the font size of the text */
+  padding-right: 25%;
+  padding-left: 5%;
+  font-weight: bold;
+  font-family: "Yo Gothic UI", sans-serif;
+  color: #6699cc;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Selector for the hover effect on the paragraph text only */
+.circle:hover p {
+  color: white; /* Change text color to white on hover */
+}
+
+.circle.right {
+  align-self: flex-end; /* Align right circles to the end */
+  text-align: left;
+  padding-right: 45px;
+  background: white;
+}
+
+.circle.right p.left-text {
+  position: absolute;
+  right: calc(100% + 10px);
+  margin-right: 0;
+  margin-top: 15%;
+  white-space: normal; /* Allow text to wrap to the next line */
+  width: 100%; /* Allow the text to stretch horizontally */
+  padding-right: 25%;
+  padding-left: 85%;
+  font-weight: bold;
+  font-family: "Yo Gothic UI", sans-serif;
+  color: #6699cc;
+}
+
+@media (min-width: 769px) {
+  .circle.right p.left-text {
+    width: 500%; /* Adjust width for larger screens */
+  }
+}

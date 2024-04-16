@@ -1,0 +1,51 @@
+/* Sdab.css */
+
+/* Optional: Add styles to control the overall layout */
+.SdabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SdabRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-left: 9%;
+}
+
+/* Style for the rounded circle images */
+.SdabImageContainer {
+  position: relative;
+}
+
+.SdabImage {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  border-radius: 50%;
+  object-fit: cover; /* Use 'cover' for the object-fit property to cover the entire container */
+}
+
+.SdabCol {
+  margin: 5px; /* Decrease the margin to decrease the space gap */
+  position: relative;
+}
+
+/* Style for the location text */
+.SdabTextContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.SdabText {
+  width: 100%;
+  white-space: nowrap;
+  shape-outside: circle(); /* Use a circular shape */
+  position: relative;
+  transform: rotate(360deg); /* Rotate the text */
+  writing-mode: horizontal-tb;
+}

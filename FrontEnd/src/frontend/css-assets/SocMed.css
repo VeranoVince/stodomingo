@@ -1,0 +1,10 @@
+.soc-med-container {
+  display: flex;
+  justify-content: center;
+}
+
+.socgap {
+  margin-right: 20px;
+  max-width: 550px;
+  max-height: 526px;
+}
