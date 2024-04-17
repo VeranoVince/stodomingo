@@ -1,4 +1,3 @@
 [build]
-  base = "FrontEnd" # Specify the directory containing your FrontEnd code
-  command = "npm run build" # Adjust this command based on how you build your FrontEnd
-  publish = "dist" # Specify the directory containing your built files (if applicable)
+  base = "SDA"  # Set the base directory to the root of your project
+  command = "npm run build"  # Adjust the build command as per your project setup
